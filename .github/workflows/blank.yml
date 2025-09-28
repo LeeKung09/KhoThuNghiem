@@ -1,0 +1,64 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+            - tên: Tải lên một hiện vật xây dựng
+  sử dụng: actions/upload-artifact@v4.6.2
+  với:
+    # Tên hiện vật
+    tên: # tùy chọn, mặc định là hiện vật
+    # Một tệp, thư mục hoặc mẫu ký tự đại diện mô tả những gì cần tải lên
+    con đường:
+    # Hành vi mong muốn nếu không tìm thấy tệp nào sử dụng đường dẫn được cung cấp.
+Các tùy chọn có sẵn:
+  cảnh báo: Đưa ra cảnh báo nhưng không làm hỏng hành động
+  lỗi: Không thực hiện được hành động với thông báo lỗi
+  bỏ qua: Không đưa ra bất kỳ cảnh báo hoặc lỗi nào, hành động không thất bại
+
+    if-no-files-found: # tùy chọn, mặc định là cảnh báo
+    # Thời gian mà hiện vật sẽ hết hạn tính bằng ngày. 0 nghĩa là sử dụng chế độ lưu giữ mặc định.
+Tối thiểu 1 ngày. Tối đa 90 ngày trừ khi có thay đổi từ trang cài đặt kho lưu trữ.
+
+    ngày lưu giữ: # tùy chọn
+    # Mức độ nén của Zlib sẽ được áp dụng cho kho lưu trữ hiện vật. Giá trị có thể dao động từ 0 đến 9: - 0: Không nén - 1: Tốc độ tốt nhất - 6: Nén mặc định (tương tự GNU Gzip) - 9: Nén tốt nhất. Mức độ cao hơn sẽ cho kết quả nén tốt hơn, nhưng sẽ mất nhiều thời gian hơn để hoàn tất. Đối với các tệp lớn không dễ nén, nên đặt giá trị 0 để tải lên nhanh hơn đáng kể.
+
+    mức độ nén: # tùy chọn, mặc định là 6
+    # Nếu đúng, một hiện vật có tên trùng khớp sẽ bị xóa trước khi tải lên hiện vật mới. Nếu sai, thao tác sẽ thất bại nếu hiện vật cho tên đã cho đã tồn tại. Không thất bại nếu hiện vật không tồn tại.
+
+    ghi đè: # tùy chọn, mặc định là sai
+    # Nếu đúng, các tệp ẩn sẽ được đưa vào hiện vật. Nếu sai, các tệp ẩn sẽ bị loại khỏi hiện vật.
+
+    include-hidden-files: # tùy chọn, mặc định là false
+          
