@@ -47,7 +47,7 @@ Các tùy chọn có sẵn:
   lỗi: Không thực hiện được hành động với thông báo lỗi
   bỏ qua: Không đưa ra bất kỳ cảnh báo hoặc lỗi nào, hành động không thất bại
 
-    # Thời gian mà hiện vật sẽ hết hạn tính bằng ngày. 0 nghĩa là sử dụng chế độ lưu giữ mặc định.
+    # Thời gian mà hiện vật sẽ hết hạn tính bằng ngày. nghĩa là sử dụng chế độ lưu giữ mặc định : 90 ngày.
 Tối thiểu 1 ngày. Tối đa 90 ngày trừ khi có thay đổi từ trang cài đặt kho lưu trữ.
 
     ngày lưu giữ: # tùy chọn
