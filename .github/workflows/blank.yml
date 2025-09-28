@@ -48,9 +48,8 @@ Các tùy chọn có sẵn:
   bỏ qua: Không đưa ra bất kỳ cảnh báo hoặc lỗi nào, hành động không thất bại
 
     # Thời gian mà hiện vật sẽ hết hạn tính bằng ngày. nghĩa là sử dụng chế độ lưu giữ mặc định : 90 ngày.
-Tối thiểu 1 ngày. Tối đa 90 ngày trừ khi có thay đổi từ trang cài đặt kho lưu trữ.
-
-    ngày lưu giữ: # tùy chọn
+     ngày lưu giữ: # tùy chọn ( Tối thiểu 1 ngày. Tối đa 90 ngày trừ khi có thay đổi từ trang cài đặt kho lưu trữ.)
+     
     # Mức độ nén của Zlib sẽ được áp dụng cho kho lưu trữ hiện vật. Giá trị có thể dao động từ 0 đến 9: - 0: Không nén - 1: Tốc độ tốt nhất - 6: Nén mặc định (tương tự GNU Gzip) - 9: Nén tốt nhất. Mức độ cao hơn sẽ cho kết quả nén tốt hơn, nhưng sẽ mất nhiều thời gian hơn để hoàn tất. Đối với các tệp lớn không dễ nén, nên đặt giá trị 0 để tải lên nhanh hơn đáng kể.
 
     mức độ nén: # tùy chọn, mặc định là 6
